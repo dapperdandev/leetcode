@@ -1,0 +1,12 @@
+{
+    "plugins": [],
+    "printWidth": 160,
+    "semi": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "endOfLine": "crlf",
+    "singleAttributePerLine": true,
+    "htmlWhitespaceSensitivity": "ignore",
+    "bracketSpacing": true,
+    "bracketSameLine": true
+}

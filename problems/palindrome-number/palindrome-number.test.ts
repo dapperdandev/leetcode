@@ -1,5 +1,5 @@
-import { expect, test } from 'vitest'
-import { isPalindrome } from './palindrome-number.ts'
+import { expect, test } from "vitest";
+import { isPalindrome } from "./palindrome-number.ts";
 
 test.each([
     [121, true],
