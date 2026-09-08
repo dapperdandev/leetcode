@@ -1,0 +1,41 @@
+// 678. Valid Parenthesis String (Medium)
+// https://leetcode.com/problems/valid-parenthesis-string/
+// NeetCode 150: Greedy
+//
+// Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid.
+//
+// The following rules define a valid string:
+//
+// - Any left parenthesis '(' must have a corresponding right parenthesis ')'.
+//
+// - Any right parenthesis ')' must have a corresponding left parenthesis '('.
+//
+// - Left parenthesis '(' must go before the corresponding right parenthesis ')'.
+//
+// - '*' could be treated as a single right parenthesis ')' or a single left parenthesis '(' or an empty string
+// "".
+
+import { describe, expect, it } from "vitest";
+import { checkValidString } from "./valid-parenthesis-string.ts";
+
+describe("678. Valid Parenthesis String", () => {
+    it("example 1", () => {
+        const s = "()";
+        expect(checkValidString(s)).toBe(true);
+    });
+
+    it("example 2", () => {
+        const s = "(*)";
+        expect(checkValidString(s)).toBe(true);
+    });
+
+    it("example 3", () => {
+        const s = "(*))";
+        expect(checkValidString(s)).toBe(true);
+    });
+
+    it("example 4", () => {
+        const s = "(";
+        expect(checkValidString(s)).toBe(false);
+    });
+});
