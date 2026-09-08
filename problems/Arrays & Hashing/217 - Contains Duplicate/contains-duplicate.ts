@@ -6,5 +6,9 @@
 // if every element is distinct.
 
 export function containsDuplicate(nums: number[]): boolean {
-    throw new Error("Not implemented");
+    const seen = new Set<number>(nums);
+
+    if (nums.length == seen.size) return false;
+
+    return true;
 }
